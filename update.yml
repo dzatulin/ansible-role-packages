@@ -33,5 +33,4 @@
           #HAProxy Skvot
           10.1.1.1  haproxy01
           10.1.1.2  haproxy02
-          #Skvot PHP7.4
 
