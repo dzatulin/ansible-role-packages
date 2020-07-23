@@ -28,38 +28,10 @@
         create: yes
         block: |
           #HAProxy Staging
-          10.135.141.20  haproxy-stag01
-          10.135.201.232 haproxy-stag02
+          10.2.2.2  haproxy-stag01
+          10.2.2.3  haproxy-stag02
           #HAProxy Skvot
-          10.135.61.225  haproxy01
-          10.135.138.208 haproxy02
+          10.1.1.1  haproxy01
+          10.1.1.2  haproxy02
           #Skvot PHP7.4
-          10.135.95.203  skvot74-01
-          10.135.8.30    skvot74-02
-          10.135.75.153  skvot74-03
-          #Staging PHP7.4
-          10.135.210.31  stag74-01
-          10.135.208.97  stag74-02 
-          #LMS
-          10.135.80.203  lms71-01
-          10.135.118.158 lms71-02
-          10.135.94.183  lms71-03
-          #HAProxy SQL 
-          10.135.129.23  haproxy-sql01
-          10.135.206.124 haproxy-sql02
-          #Redis Skvot
-          10.135.187.88  redis-skvot
-          10.135.146.159 redis-stag
-          10.135.53.186  redis-laba
-          10.135.154.148 redis-profity 
-          10.135.177.137 redis-robot
-          10.135.101.15  redis-lms
-          #LABA
-          10.135.211.204 laba74-02
-          10.135.197.64  laba74-01
-          10.135.91.249  laba74-03
-          10.135.25.191  laba74-04
-          #ROBOT
-          10.135.19.128  robot74-02
-          165.22.64.77   robot74-01
 
