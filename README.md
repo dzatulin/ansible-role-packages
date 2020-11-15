@@ -6,16 +6,13 @@ Ansible version: 2.9
 None
 ## Example Playbook
 ```
-  - hosts: "{{ var }}"
-     install_all_package_updates: true
-     install_packages:
-     - epel-release
-     - mc
-     - vim
-   roles:
-     - ansible-role-packages
-   tasks:
-     - name: set timezone to UA_Kiev
-       timezone:
-         name: Europe/Kiev
-
+- hosts: mariadb-slave1
+  vars:
+    mysql_packages:
+      - mariadb
+      - mariadb-server
+      - MySQL-python
+#  vars_files:
+#    - vars/main.yml
+  roles:
+    -  role: ansible-role-mysql
