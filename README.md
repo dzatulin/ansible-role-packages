@@ -13,7 +13,6 @@ None
     install_all_package_updates: false
     install_packages:
     - epel-release
-    - mc
     - vim
     - htop
     - rsync
@@ -23,6 +22,10 @@ None
     - wget
     - git
     - nano
+    remove_packages: 
+    - mc
+    update_packages:
+    - java
   roles:
     - ansible-role-packages
 ```
