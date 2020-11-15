@@ -2,17 +2,27 @@
 Role for installing, removing and updating packages
 ## Requirements
 Ansible version: 2.9
+Centos 7/ Debian
 ## Dependencies
 None
 ## Example Playbook
 ```
-- hosts: mariadb-slave1
+- name: update
+  hosts: "{{ var }}"
   vars:
-    mysql_packages:
-      - mariadb
-      - mariadb-server
-      - MySQL-python
-#  vars_files:
-#    - vars/main.yml
+    install_all_package_updates: false
+    install_packages:
+    - epel-release
+    - mc
+    - vim
+    - htop
+    - rsync
+    - gzip
+    - unzip
+    - java
+    - wget
+    - git
+    - nano
   roles:
-    -  role: ansible-role-mysql
+    - ansible-role-packages
+```
